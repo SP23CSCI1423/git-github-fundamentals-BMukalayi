@@ -1,0 +1,7 @@
+#loops :For , foreach, while, until
+#conditionals: if , if else, if elif else, unless
+While Loop
+$count = 1;
+While($count < 10 ) {
+print ("the count is : $count\n");
+}
