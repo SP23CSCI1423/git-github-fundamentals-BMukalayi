@@ -13,11 +13,11 @@ print("The number you chose were $number1 and $number2\n");
 $add1 = $number1 + $number2;
 $sub1 = $number1 - $number2;
 $mult1 = $number1 * $number2;
-$div1 = $number2 / $number1;
+$div1 = $number1 / $number2;
 $expo1 = $number1 ** $number2;
 $mod1 = $number1 % $number2;
 print("What operation would you like to perform?\n");
-$response= <>;
+$response = <>;
 Chomp($response);
 
 if($response eq "addition\n"){
@@ -36,6 +36,5 @@ elsif($response eq "exponent\n"){
   print("exponent is : $exp1\n");
 }
  else{
-
- print("modulus is :$mod1\n");
+      print("modulus is :$mod1\n");
 }
