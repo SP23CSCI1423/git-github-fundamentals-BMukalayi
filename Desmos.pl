@@ -20,13 +20,16 @@ print("What operation would you like to perform?\n");
 $response = <>;
 Chomp($response);
 
-if($response eq "addition\n"){
+if($response eq "addition"){
+$add1 = $number1 + $number2;
  print("Addition is : $add1\n");
 }
-elsif($response eq "substraction\n"){
+elsif($response eq "substraction"){
+  $sub1 = $number1 - $number2;
   print("Substraction is : $sub1\n");
 }
-elsif($response eq "multiplication\n"){
+elsif($response eq "multiplication"){
+$mult1 = $number1 * $number2;
  print("multiplication is: $mult1\n");
  }
  elsif($response eq "division\n"){
