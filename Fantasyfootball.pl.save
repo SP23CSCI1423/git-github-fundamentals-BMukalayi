@@ -1,0 +1,15 @@
+#Create a hash with at least 5 key-value pairs where the keys are football players and the values are thier respective number of wins.
+#Print out the entire hash, showing the key-vlaue pairs
+#Ask the user if they want to add or delete a player from the fantasy football roster (the hash)
+#If they want to add a player:
+#Ask for the player name and their number of wins
+#Add the player name and number of wins as a key-value pair to the hash 
+#Print new roster (print the entire hash)
+#If they want to delete a player:
+#Ask which player they want to delete
+#Remove the entire key-value pair for that player
+#Print new roster (print the entire hash)
+%ballRoster = (Maradona => 1000, Platini =>8000, Renaldino =>536, RoiPele => 1500, Makanaki =>810);
+ for(sort keys %ballRoster){
+   print("key:$_, Value:{$}\n");
+}_
