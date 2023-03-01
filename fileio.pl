@@ -18,3 +18,24 @@ close(DATA);
 $words1;
 $words2;
 $words3;
+open(DATA, "<fileio.txt" || die "couldn't open the file, $!";
+read(DATA, $words1, 8);
+print("words1\n");
+read(DATA, $words1,9);
+print("words2\n");
+read(DATA, "words3, 13);
+print("words3\n");
+close(DATA);
+#EDITING  INFORMATION WITHIN A FILE 
+#USE THE > for file editing
+open(DATA, ">fileio.txt") or die "couldn't open the file";
+@replacement = ("We", "are", "replacing, "data");
+print DATA @replacement;
+close(DATA);
+#NOTE: THIS WILL REPLACE ALL PREVIOUS FILE CONTENTS WITH THE ARRAY
+#EDITIN infomration within a file without removing all previous information
+opent(DATA, ">>", "fileio.txt") or die "couldn't open the file, $!";
+print DATA, "Trying not to delete everything\n";
+close (DATA);
+open(DATA, ">>", "fileio.txt") || die "couldn't open the file";
+@adding = ("Adding", "words", "with", "
