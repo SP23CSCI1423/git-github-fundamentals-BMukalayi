@@ -18,3 +18,22 @@ else{
 }
 
 	
+#Second string
+@Carsbrand = ("Mazda", "Nissan","Renault", "Peugeot", "Mercedes");
+ print("Second string is : @Carsbrand \n");
+print("CARS!!! @Carsbrand \n");
+foreach $newbrand(@Carsbrand){
+	$newbrand  =~ s/Peugeot/Europeen/;
+}
+print("CARS!!! @Carsbrand \n");
+ #Third string
+@Myfavcolors = ("Magenta", "Gold", "Pink", "Forest Green");
+print("Thirs string is : @Myfavcolors\n");
+
+foreach $newcolors(@Myfavcolors){
+	$newcolors =~ tr/a/e/;
+	$newcolors =~ tr/d/g/;
+	$newcolors =~ tr/i/o/;
+        $newcolors =~ tr/e/a/;
+}
+print("My new Colors: @Myfavcolors \n");
