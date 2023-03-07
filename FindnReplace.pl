@@ -10,3 +10,11 @@
 @Africanfood = ("Madeso","Mchelee", "Samaki", "Ugali");
 print("Firs string is :@Africanfood \n");
 
+if(grep { /Samaki/ } @Africanfood){
+	print("Samaki was found within the array\n");
+}
+else{
+	print("Not matched\n");
+}
+
+	
